@@ -1,0 +1,29 @@
+{
+    "system_metadata": {
+        "project_name": "SmartFlow AI",
+        "version": "2.0.0-NeuroSymbolic",
+        "author": "UrbanPulse AI Team",
+        "environment": "Edge Deployment"
+    },
+    "ml_model_settings": {
+        "model_name": "yolov8n.pt",
+        "confidence_threshold": 0.45,
+        "iou_threshold": 0.5,
+        "inference_size": 640,
+        "vehicle_classes": [2, 3, 5, 7]
+    },
+    "traffic_logic_parameters": {
+        "multiplier": 1.5,
+        "log_interval": 2,
+        "congestion_threshold": 15.0,
+        "max_green_time_seconds": 60,
+        "emergency_priority_score": 1000
+    },
+    "hardware_settings": {
+        "camera_source": 0,
+        "use_directshow": true,
+        "headless_mode": false,
+        "frame_width": 640,
+        "frame_height": 480
+    }
+}
